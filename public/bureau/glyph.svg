@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" role="img" aria-labelledby="title desc">
+  <title id="title">Bureau Obscura Vapor Glyph - paper</title>
+  <desc id="desc">A thin horizontal ellipse with one solid dot at its center.</desc>
+  <ellipse cx="50" cy="20" rx="44" ry="14" fill="none" stroke="#E3E3E3" stroke-width="1.44"/>
+  <circle cx="50" cy="20" r="1.9" fill="#E3E3E3"/>
+</svg>
