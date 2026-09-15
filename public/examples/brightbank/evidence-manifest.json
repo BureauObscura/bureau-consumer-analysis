@@ -1,0 +1,234 @@
+[
+  {
+    "file": "assets/instagram-ad.png",
+    "bytes": 1786608,
+    "sha256": "7a9714831fb6d3ae004585b8da395d8ac2fc89c32093b34d7e3be480f3668e9d",
+    "scenarios": [
+      "brightbank-baseline",
+      "brightbank-information",
+      "brightbank-guest",
+      "brightbank-simple",
+      "brightbank-shipping",
+      "brightbank-promo",
+      "brightbank-combined",
+      "brightbank-upfront"
+    ]
+  },
+  {
+    "file": "ad-copy.txt",
+    "bytes": 526,
+    "sha256": "ce40573c85a2bb614f5ba6cf699fc6255301c45d8afb5be27363143b83022bd8",
+    "scenarios": [
+      "brightbank-baseline",
+      "brightbank-information",
+      "brightbank-guest",
+      "brightbank-simple",
+      "brightbank-shipping",
+      "brightbank-promo",
+      "brightbank-combined",
+      "brightbank-upfront"
+    ]
+  },
+  {
+    "file": "brightbank-baseline-pdp.html",
+    "bytes": 2804,
+    "sha256": "8cfe7ef2fabfc829912a6c3d52169c2194f9685644739e0fd51b7016a0f4c5c1",
+    "scenarios": [
+      "brightbank-baseline"
+    ]
+  },
+  {
+    "file": "brightbank-baseline-cart.html",
+    "bytes": 3021,
+    "sha256": "d3cf27137137da7e59f343a93083fc934c9faf5d2ae30e6132933b48d5d7b4c4",
+    "scenarios": [
+      "brightbank-baseline"
+    ]
+  },
+  {
+    "file": "brightbank-baseline-checkout.html",
+    "bytes": 6243,
+    "sha256": "fa4b7f7956349bdf79430a84b1bd2f02c9d538668556b70d3805843a64f3561a",
+    "scenarios": [
+      "brightbank-baseline"
+    ]
+  },
+  {
+    "file": "brightbank-information-pdp.html",
+    "bytes": 3642,
+    "sha256": "96f8a32c794c9d737d03fdc9e92cb0b735090c0e06c54a9deda3d6621ecef3f8",
+    "scenarios": [
+      "brightbank-information"
+    ]
+  },
+  {
+    "file": "brightbank-information-cart.html",
+    "bytes": 3030,
+    "sha256": "776f8fc9181da6f8dacf874f56245acea6d2b384d99f16e516b85099d284b166",
+    "scenarios": [
+      "brightbank-information"
+    ]
+  },
+  {
+    "file": "brightbank-information-checkout.html",
+    "bytes": 6246,
+    "sha256": "b3811ad60e6143c3c76983c3e90ee23c0d2ee775a2006d71a2bb891e60a32281",
+    "scenarios": [
+      "brightbank-information"
+    ]
+  },
+  {
+    "file": "product-facts.pdf",
+    "bytes": 2886,
+    "sha256": "c55221cbcce4567d056a90e97938fb1948da331fb62912f365dbe749de66668e",
+    "scenarios": [
+      "brightbank-information",
+      "brightbank-combined",
+      "brightbank-upfront"
+    ]
+  },
+  {
+    "file": "brightbank-guest-pdp.html",
+    "bytes": 2801,
+    "sha256": "20b39488e126aae2d72e06dafbe5904ce5ac9964177620db768746dd8d8ec19b",
+    "scenarios": [
+      "brightbank-guest"
+    ]
+  },
+  {
+    "file": "brightbank-guest-cart.html",
+    "bytes": 3012,
+    "sha256": "c0dd584f8311b92efc2ad7d205e37a927d142cdb05001b1fbf6d3c880fc9bc26",
+    "scenarios": [
+      "brightbank-guest"
+    ]
+  },
+  {
+    "file": "brightbank-guest-checkout.html",
+    "bytes": 6310,
+    "sha256": "a611f6cc529893c865646cb18d80636c30d70f9c2597206d49a998b7852b90d4",
+    "scenarios": [
+      "brightbank-guest"
+    ]
+  },
+  {
+    "file": "brightbank-simple-pdp.html",
+    "bytes": 2802,
+    "sha256": "0fcbfbaa5d76d3d0feb350bd97295a9ccfa5c810c2caf21a182f7e2b3cc79060",
+    "scenarios": [
+      "brightbank-simple"
+    ]
+  },
+  {
+    "file": "brightbank-simple-cart.html",
+    "bytes": 3015,
+    "sha256": "4c4eaab9d513b61c36021f7909252f668e97fa0e4267cd7445cc365518bc6e74",
+    "scenarios": [
+      "brightbank-simple"
+    ]
+  },
+  {
+    "file": "brightbank-simple-checkout.html",
+    "bytes": 6000,
+    "sha256": "34d2041b14293e24e1cd37e3cef371a4da73e111e2a1fea3673e462b81788476",
+    "scenarios": [
+      "brightbank-simple"
+    ]
+  },
+  {
+    "file": "brightbank-shipping-pdp.html",
+    "bytes": 2804,
+    "sha256": "9528f71cc1e083e5c30a007fcb65666959cbcc1a66e829128f788f34dd9def50",
+    "scenarios": [
+      "brightbank-shipping"
+    ]
+  },
+  {
+    "file": "brightbank-shipping-cart.html",
+    "bytes": 3021,
+    "sha256": "f7c6f56ba14683182fed7d8f226a1a2d22f20d8ca9e9908718ada9af63330df7",
+    "scenarios": [
+      "brightbank-shipping"
+    ]
+  },
+  {
+    "file": "brightbank-shipping-checkout.html",
+    "bytes": 6240,
+    "sha256": "f3898858e6410406a4447c1d1969149a996155b8bce33206f3acb76c4b44ee07",
+    "scenarios": [
+      "brightbank-shipping"
+    ]
+  },
+  {
+    "file": "brightbank-promo-pdp.html",
+    "bytes": 2842,
+    "sha256": "2e675557a29ac434c1fd351d7ab3c8b13a5766cae83f64b7509fac96b1dc6f4d",
+    "scenarios": [
+      "brightbank-promo"
+    ]
+  },
+  {
+    "file": "brightbank-promo-cart.html",
+    "bytes": 3054,
+    "sha256": "416df27b0cbddf7f0e2cab43e902850d14ffd91671be0ebcb734a2a1cb43c8ed",
+    "scenarios": [
+      "brightbank-promo"
+    ]
+  },
+  {
+    "file": "brightbank-promo-checkout.html",
+    "bytes": 6240,
+    "sha256": "700782dd4bc21a4df82e2b7aabf536e1b5b11b6c2177516a040039c5cb8cc0a8",
+    "scenarios": [
+      "brightbank-promo"
+    ]
+  },
+  {
+    "file": "brightbank-combined-pdp.html",
+    "bytes": 3639,
+    "sha256": "e6b62a25ad2fd36969c6c713207cfae810d4a23ec6fc81a122d5d3a392598e5c",
+    "scenarios": [
+      "brightbank-combined"
+    ]
+  },
+  {
+    "file": "brightbank-combined-cart.html",
+    "bytes": 3021,
+    "sha256": "3394dfa8d51ab98e5e7743f11a08ab2a3ef706fa4941fa96ffdb51337df5e0b8",
+    "scenarios": [
+      "brightbank-combined"
+    ]
+  },
+  {
+    "file": "brightbank-combined-checkout.html",
+    "bytes": 5903,
+    "sha256": "68dff8e27878aecd313eec19842282f1039550ad091ea552373f94ee54406cff",
+    "scenarios": [
+      "brightbank-combined"
+    ]
+  },
+  {
+    "file": "brightbank-upfront-pdp.html",
+    "bytes": 3669,
+    "sha256": "bfcefa7a0779f3cc4f1c3d5510c75ed7e51b25d91a3368817c335b53f411d90c",
+    "scenarios": [
+      "brightbank-upfront"
+    ]
+  },
+  {
+    "file": "brightbank-upfront-cart.html",
+    "bytes": 3001,
+    "sha256": "c8a62e5172b51cb7757da137179e503f84fd14d697806ad3a1a7ad9fabfca3b2",
+    "scenarios": [
+      "brightbank-upfront"
+    ]
+  },
+  {
+    "file": "brightbank-upfront-checkout.html",
+    "bytes": 5902,
+    "sha256": "a4b5dfe3bdfcc8e699d632ed7306baeef95e09ba87948f726bef0fc8329a42ae",
+    "scenarios": [
+      "brightbank-upfront"
+    ]
+  }
+]

@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Brightbank study · Bureau Obscura</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #0b100c;
+        color: #e6e9df;
+        font:
+          15px/1.6 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 1180px;
+        margin: auto;
+        padding: 40px 28px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 22px;
+        border-bottom: 1px solid #344735;
+      }
+      .mono,
+      th {
+        font-family: ui-monospace, monospace;
+      }
+      .eyebrow {
+        font:
+          12px ui-monospace,
+          monospace;
+        letter-spacing: 2px;
+        color: #a0c1a2;
+      }
+      h1 {
+        font:
+          clamp(36px, 6vw, 60px)/1.05 Georgia,
+          serif;
+        margin: 20px 0;
+      }
+      h2 {
+        font:
+          26px Georgia,
+          serif;
+        margin-top: 42px;
+      }
+      .lead {
+        color: #b7c3b5;
+        max-width: 720px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 48px;
+        margin: 30px 0;
+      }
+      .hero img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .tag {
+        display: inline-block;
+        padding: 4px 9px;
+        border: 1px solid #5b715d;
+        font-size: 12px;
+      }
+      a {
+        color: #a8dfa4;
+      }
+      nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 22px 0;
+      }
+      nav a {
+        padding: 10px 14px;
+        border: 1px solid #536c53;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .metrics {
+        display: flex;
+        gap: 28px;
+        flex-wrap: wrap;
+      }
+      .metrics strong {
+        display: block;
+        font:
+          30px ui-monospace,
+          monospace;
+      }
+      .metrics span {
+        color: #acbbaa;
+        font-size: 13px;
+      }
+      .table {
+        overflow-x: auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+      }
+      th,
+      td {
+        text-align: right;
+        padding: 13px 10px;
+        border-bottom: 1px solid #2e3d2d;
+        white-space: nowrap;
+      }
+      th:first-child,
+      td:first-child {
+        text-align: left;
+      }
+      th {
+        color: #a2b89e;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+      select {
+        background: #172318;
+        color: #e6e9df;
+        border: 1px solid #536c53;
+        padding: 10px;
+        font: inherit;
+        width: 100%;
+        max-width: 500px;
+      }
+      .funnel {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        margin: 22px 0;
+      }
+      .stage {
+        padding: 15px;
+        border: 1px solid #3f553d;
+        background: #132015;
+      }
+      .stage strong {
+        display: block;
+        font:
+          24px ui-monospace,
+          monospace;
+      }
+      .stage small {
+        color: #a9bba3;
+      }
+      .note {
+        padding: 18px;
+        background: #162017;
+        border-left: 3px solid #92bf8b;
+        color: #c1ceb9;
+      }
+      .files {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .files section {
+        border: 1px solid #344735;
+        padding: 22px;
+      }
+      .files h3 {
+        margin-top: 0;
+      }
+      footer {
+        margin-top: 42px;
+        padding-top: 22px;
+        border-top: 1px solid #344735;
+        color: #8da28a;
+        font-size: 12px;
+      }
+      @media (max-width: 720px) {
+        main {
+          padding: 22px 16px;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+        }
+        .hero img {
+          max-width: 320px;
+        }
+        .funnel {
+          grid-template-columns: 1fr 1fr;
+        }
+        .files {
+          grid-template-columns: 1fr;
+        }
+        header {
+          gap: 15px;
+        }
+        .metrics strong {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="mono"
+          >BUREAU OBSCURA<br /><small>CONSUMER ANALYSIS DIVISION</small></span
+        ><span class="eyebrow">EXAMPLE STUDY / BB-001</span>
+      </header>
+      <div class="hero">
+        <section>
+          <span class="tag">Fictional brand · synthetic outcomes</span>
+          <h1>Brightbank soda</h1>
+          <p class="lead">
+            An orange-and-vanilla cane-sugar soda. One Instagram creative, a
+            $28.80 twelve-pack, eight purchase journeys and six price points.
+          </p>
+          <p class="lead">
+            The study tests product information, shipping, discounts and
+            checkout requirements. Every journey evaluates the same 10 million
+            synthetic profiles.
+          </p>
+          <nav>
+            <a href="../../../">Open simulator</a
+            ><a href="configuration.json" download>Study inputs</a
+            ><a href="journey-run.json" download>Completed run</a
+            ><a href="RESULTS.md">Read results</a>
+          </nav>
+          <div class="metrics">
+            <div>
+              <strong>10,000,000</strong><span>individual IDs per journey</span>
+            </div>
+            <div><strong>8</strong><span>journeys</span></div>
+            <div><strong>6</strong><span>price points</span></div>
+          </div>
+        </section>
+        <img
+          src="assets/instagram-ad.png"
+          alt="Fictional Brightbank orange vanilla soda Instagram ad"
+        />
+      </div>
+      <p class="note">
+        These are outputs of the supplied assumptions, not observed demand. The
+        profiles do not independently read the creative or website. Reviewed
+        evidence is translated into explicit numeric inputs. No paid media, real
+        customers or transactions were used.
+      </p>
+      <h2>Purchase funnel</h2>
+      <label for="journey">Select a tested journey</label><br /><select
+        id="journey"
+      ></select>
+      <div id="funnel" class="funnel" aria-live="polite"></div>
+      <h2>Journeys and economics</h2>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Journey</th>
+              <th>Orders</th>
+              <th>Revenue</th>
+              <th>Contribution after media</th>
+            </tr>
+          </thead>
+          <tbody id="journey-rows"></tbody>
+        </table>
+      </div>
+      <p class="lead">
+        Each row includes $95,000 of assumed media spend. Revenue includes
+        customer shipping and excludes tax. Costs include product,
+        fulfillment/shipping and payment fees.
+      </p>
+      <h2>Price response</h2>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Pack price</th>
+              <th>Orders</th>
+              <th>Contribution after media</th>
+            </tr>
+          </thead>
+          <tbody id="price-rows"></tbody>
+        </table>
+      </div>
+      <p class="lead">
+        Complete PDP, guest checkout and shorter forms held constant. Fixed
+        shipping can make the lowest pack price convert worse under this model's
+        late-charge rule. The highest tested price is a range boundary, not an
+        established optimum.
+      </p>
+      <h2>Creative and checkout evidence</h2>
+      <div class="files">
+        <section>
+          <h3>Baseline</h3>
+          <p>
+            <a href="assets/instagram-ad.png">Instagram creative</a> ·
+            <a href="ad-copy.txt">Ad copy</a>
+          </p>
+          <p>
+            <a href="brightbank-baseline-pdp.html">Limited product page</a> →
+            <a href="brightbank-baseline-cart.html">Cart and code</a> →
+            <a href="brightbank-baseline-checkout.html">Account checkout</a>
+          </p>
+          <p>
+            The code BRIGHT10 applies a simulated 10% product discount. Use test
+            values only.
+          </p>
+        </section>
+        <section>
+          <h3>Combined intervention</h3>
+          <p><a href="product-facts.pdf">Product facts PDF</a></p>
+          <p>
+            <a href="brightbank-upfront-pdp.html"
+              >Complete page with shipping</a
+            >
+            → <a href="brightbank-upfront-cart.html">Cart</a> →
+            <a href="brightbank-upfront-checkout.html">Guest checkout</a>
+          </p>
+          <p>
+            The mock flow offers simulated wallet and PayPal choices. No payment
+            provider is contacted.
+          </p>
+        </section>
+      </div>
+      <h2>Inspect or reproduce</h2>
+      <nav>
+        <a href="assumptions.md">Input rationale</a
+        ><a href="README.md">Reproduction guide</a
+        ><a href="individual-records.json">57 individual records</a
+        ><a href="journey-results.csv" download>Results CSV</a
+        ><a href="price-configuration.json" download>Price inputs</a
+        ><a href="price-run.json" download>Price results</a
+        ><a href="evidence-manifest.json">Evidence hashes</a
+        ><a href="test-receipt.json">Automated checks</a
+        ><a href="browser-test.md">Browser test</a>
+      </nav>
+      <p id="error" role="alert"></p>
+      <footer>
+        Brightbank is a fictional example. Brand, product claims, composition,
+        prices and consumer assumptions have not been validated as a commercial
+        offer.
+      </footer>
+    </main>
+    <script type="module">
+      const integer = (n) => n.toLocaleString("en-US"),
+        usd = (n) =>
+          n.toLocaleString("en-US", { style: "currency", currency: "USD" });
+      const cell = (tr, text) => {
+        const td = document.createElement("td");
+        td.textContent = text;
+        tr.append(td);
+      };
+      try {
+        const responses = await Promise.all(
+          ["journey-run.json", "price-run.json"].map((f) => fetch(f)),
+        );
+        if (responses.some((r) => !r.ok))
+          throw Error(
+            "Run files unavailable. Start the app locally or reproduce the study.",
+          );
+        const [run, price] = await Promise.all(responses.map((r) => r.json()));
+        const menu = document.getElementById("journey");
+        run.results.forEach((r, i) => {
+          menu.add(new Option(r.scenarioName, String(i)));
+          const tr = document.createElement("tr");
+          [
+            r.scenarioName,
+            integer(r.purchases),
+            usd(r.revenue),
+            usd(r.contribution - r.adSpend),
+          ].forEach((v) => cell(tr, v));
+          document.getElementById("journey-rows").append(tr);
+        });
+        price.results.forEach((r, i) => {
+          const tr = document.createElement("tr");
+          [
+            usd(price.scenarios[i].product.price),
+            integer(r.purchases),
+            usd(r.contribution - r.adSpend),
+          ].forEach((v) => cell(tr, v));
+          document.getElementById("price-rows").append(tr);
+        });
+        function render() {
+          const r = run.results[Number(menu.value)];
+          document.getElementById("funnel").replaceChildren(
+            ...[
+              ["Exposed", "exposed"],
+              ["Clicked", "clicks"],
+              ["Added to cart", "carts"],
+              ["Started checkout", "checkout"],
+              ["Purchased", "purchases"],
+            ].map(([label, key]) => {
+              const box = document.createElement("div");
+              box.className = "stage";
+              const small = document.createElement("small");
+              small.textContent = label;
+              const strong = document.createElement("strong");
+              strong.textContent = integer(r[key]);
+              box.append(small, strong);
+              return box;
+            }),
+          );
+        }
+        menu.addEventListener("change", render);
+        render();
+      } catch (error) {
+        document.getElementById("error").textContent = error.message;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+Use case: precise-object-edit
+Asset type: finished BRIGHTBANK Instagram feed ad.
+Edit target: the supplied finished BRIGHTBANK ad image.
+Change only the offer line near the bottom: replace "12 cans · $28.80" with the exact text "12 cans · Orange & Vanilla".
+Match the existing burnt-orange editorial serif type styling and center alignment. Reduce only this line's font size if necessary so it fits naturally above the existing CTA with generous margins.
+Preserve everything else: the exact image dimensions and crop, warm tangerine and cream palette, headline "Orange. Vanilla. Cane sugar.", hero soda can and every label detail, condensation, orange wedge, vanilla flower, background and shadows, and CTA "Shop the 12-pack". Do not add price text anywhere else. Do not add or remove other artwork, claims, badges, text, or UI.

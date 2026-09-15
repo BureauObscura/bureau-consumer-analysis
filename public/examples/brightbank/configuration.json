@@ -1,0 +1,1369 @@
+{
+  "id": "brightbank-journey-10m",
+  "population": {
+    "size": 10000000,
+    "seed": 20260915,
+    "excludedShare": 0.65,
+    "activeNeedShare": 0.28,
+    "offlineOnlyShare": 0.18,
+    "medianBudget": 32,
+    "mobileShare": 0.87,
+    "familiarShare": 0.02,
+    "deliberation": 0.42,
+    "priceSensitivity": 1.25,
+    "distrust": 0.55
+  },
+  "scenarios": [
+    {
+      "id": "brightbank-baseline",
+      "name": "Baseline: limited PDP + account checkout",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 6.95,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans. All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Contains 35 g added sugar per can. Serve cold. Single purchase, no subscription. Nutrition and ingredients are available from support. Shipping and tax calculated at checkout. Unopened packs may be returned within 14 days; report damaged deliveries within 7 days. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.35,
+        "pageAnswerAccess": 0.3,
+        "pageProof": 0.25,
+        "pageTrust": 0.57,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.35,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "checkout",
+        "discountMode": "coupon",
+        "couponSuccess": 0.25,
+        "guestCheckout": false,
+        "wallets": false,
+        "paypal": false,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Create account",
+          "type": "contact",
+          "fields": 4,
+          "seconds": 16,
+          "errorRate": 0.012,
+          "clarity": 0.75
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 7,
+          "seconds": 24,
+          "errorRate": 0.035,
+          "clarity": 0.72
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 7,
+          "errorRate": 0.008,
+          "clarity": 0.8
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 5,
+          "seconds": 25,
+          "errorRate": 0.025,
+          "clarity": 0.76
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 8,
+          "errorRate": 0.005,
+          "clarity": 0.85
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    },
+    {
+      "id": "brightbank-information",
+      "name": "Complete PDP answers",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 6.95,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans (144 fl oz total). All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Ingredients: Carbonated water, cane sugar, orange juice from concentrate, natural orange and vanilla flavors, citric acid. Nutrition: Per 12 fl oz can: 140 calories; 0 g total fat; 15 mg sodium; 36 g carbohydrate; 35 g total sugar, including 35 g added sugar; 0 g protein. Caffeine free. Contains added sugar; this is not a low-sugar or zero-sugar drink. Single purchase, no subscription. Store unopened cans in a cool, dry place. Refrigerate after opening and serve cold. Ships to the contiguous United States in 3-5 business days. Unopened packs may be returned within 14 days; buyer pays return postage. Report damaged deliveries within 7 days for replacement. Contact support through the on-page form. There are no customer reviews yet. Shipping and tax calculated at checkout. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.9,
+        "pageAnswerAccess": 0.9,
+        "pageProof": 0.4,
+        "pageTrust": 0.72,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.9,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "checkout",
+        "discountMode": "coupon",
+        "couponSuccess": 0.25,
+        "guestCheckout": false,
+        "wallets": false,
+        "paypal": false,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Create account",
+          "type": "contact",
+          "fields": 4,
+          "seconds": 16,
+          "errorRate": 0.012,
+          "clarity": 0.75
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 7,
+          "seconds": 24,
+          "errorRate": 0.035,
+          "clarity": 0.72
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 7,
+          "errorRate": 0.008,
+          "clarity": 0.8
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 5,
+          "seconds": 25,
+          "errorRate": 0.025,
+          "clarity": 0.76
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 8,
+          "errorRate": 0.005,
+          "clarity": 0.85
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    },
+    {
+      "id": "brightbank-guest",
+      "name": "Guest checkout + wallets",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 6.95,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans. All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Contains 35 g added sugar per can. Serve cold. Single purchase, no subscription. Nutrition and ingredients are available from support. Shipping and tax calculated at checkout. Unopened packs may be returned within 14 days; report damaged deliveries within 7 days. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.35,
+        "pageAnswerAccess": 0.3,
+        "pageProof": 0.25,
+        "pageTrust": 0.57,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.35,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "checkout",
+        "discountMode": "coupon",
+        "couponSuccess": 0.25,
+        "guestCheckout": true,
+        "wallets": true,
+        "paypal": true,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Contact details",
+          "type": "contact",
+          "fields": 4,
+          "seconds": 16,
+          "errorRate": 0.012,
+          "clarity": 0.75
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 7,
+          "seconds": 24,
+          "errorRate": 0.035,
+          "clarity": 0.72
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 7,
+          "errorRate": 0.008,
+          "clarity": 0.8
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 5,
+          "seconds": 25,
+          "errorRate": 0.025,
+          "clarity": 0.76
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 8,
+          "errorRate": 0.005,
+          "clarity": 0.85
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    },
+    {
+      "id": "brightbank-simple",
+      "name": "Shorter checkout forms",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 6.95,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans. All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Contains 35 g added sugar per can. Serve cold. Single purchase, no subscription. Nutrition and ingredients are available from support. Shipping and tax calculated at checkout. Unopened packs may be returned within 14 days; report damaged deliveries within 7 days. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.35,
+        "pageAnswerAccess": 0.3,
+        "pageProof": 0.25,
+        "pageTrust": 0.57,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.35,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "checkout",
+        "discountMode": "coupon",
+        "couponSuccess": 0.25,
+        "guestCheckout": false,
+        "wallets": false,
+        "paypal": false,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Create account",
+          "type": "contact",
+          "fields": 4,
+          "seconds": 8,
+          "errorRate": 0.003,
+          "clarity": 0.94
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 5,
+          "seconds": 12,
+          "errorRate": 0.00875,
+          "clarity": 0.94
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 3,
+          "errorRate": 0.002,
+          "clarity": 0.94
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 4,
+          "seconds": 12,
+          "errorRate": 0.00625,
+          "clarity": 0.94
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 3,
+          "errorRate": 0.00125,
+          "clarity": 0.94
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    },
+    {
+      "id": "brightbank-shipping",
+      "name": "Free shipping",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 0,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans. All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Contains 35 g added sugar per can. Serve cold. Single purchase, no subscription. Nutrition and ingredients are available from support. Shipping and tax calculated at checkout. Unopened packs may be returned within 14 days; report damaged deliveries within 7 days. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.35,
+        "pageAnswerAccess": 0.3,
+        "pageProof": 0.25,
+        "pageTrust": 0.57,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.35,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "checkout",
+        "discountMode": "coupon",
+        "couponSuccess": 0.25,
+        "guestCheckout": false,
+        "wallets": false,
+        "paypal": false,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Create account",
+          "type": "contact",
+          "fields": 4,
+          "seconds": 16,
+          "errorRate": 0.012,
+          "clarity": 0.75
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 7,
+          "seconds": 24,
+          "errorRate": 0.035,
+          "clarity": 0.72
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 7,
+          "errorRate": 0.008,
+          "clarity": 0.8
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 5,
+          "seconds": 25,
+          "errorRate": 0.025,
+          "clarity": 0.76
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 8,
+          "errorRate": 0.005,
+          "clarity": 0.85
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    },
+    {
+      "id": "brightbank-promo",
+      "name": "Automatic 10% discount",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 6.95,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans. All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Contains 35 g added sugar per can. Serve cold. Single purchase, no subscription. Nutrition and ingredients are available from support. Shipping and tax calculated at checkout. Unopened packs may be returned within 14 days; report damaged deliveries within 7 days. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.35,
+        "pageAnswerAccess": 0.3,
+        "pageProof": 0.25,
+        "pageTrust": 0.57,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.35,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "checkout",
+        "discountMode": "automatic",
+        "couponSuccess": 0.25,
+        "guestCheckout": false,
+        "wallets": false,
+        "paypal": false,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Create account",
+          "type": "contact",
+          "fields": 4,
+          "seconds": 16,
+          "errorRate": 0.012,
+          "clarity": 0.75
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 7,
+          "seconds": 24,
+          "errorRate": 0.035,
+          "clarity": 0.72
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 7,
+          "errorRate": 0.008,
+          "clarity": 0.8
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 5,
+          "seconds": 25,
+          "errorRate": 0.025,
+          "clarity": 0.76
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 8,
+          "errorRate": 0.005,
+          "clarity": 0.85
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    },
+    {
+      "id": "brightbank-combined",
+      "name": "Complete PDP + guest + shorter forms",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 6.95,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans (144 fl oz total). All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Ingredients: Carbonated water, cane sugar, orange juice from concentrate, natural orange and vanilla flavors, citric acid. Nutrition: Per 12 fl oz can: 140 calories; 0 g total fat; 15 mg sodium; 36 g carbohydrate; 35 g total sugar, including 35 g added sugar; 0 g protein. Caffeine free. Contains added sugar; this is not a low-sugar or zero-sugar drink. Single purchase, no subscription. Store unopened cans in a cool, dry place. Refrigerate after opening and serve cold. Ships to the contiguous United States in 3-5 business days. Unopened packs may be returned within 14 days; buyer pays return postage. Report damaged deliveries within 7 days for replacement. Contact support through the on-page form. There are no customer reviews yet. Shipping and tax calculated at checkout. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.9,
+        "pageAnswerAccess": 0.9,
+        "pageProof": 0.4,
+        "pageTrust": 0.72,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.9,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "checkout",
+        "discountMode": "coupon",
+        "couponSuccess": 0.25,
+        "guestCheckout": true,
+        "wallets": true,
+        "paypal": true,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Contact details",
+          "type": "contact",
+          "fields": 2,
+          "seconds": 8,
+          "errorRate": 0.003,
+          "clarity": 0.94
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 5,
+          "seconds": 12,
+          "errorRate": 0.00875,
+          "clarity": 0.94
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 3,
+          "errorRate": 0.002,
+          "clarity": 0.94
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 4,
+          "seconds": 12,
+          "errorRate": 0.00625,
+          "clarity": 0.94
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 3,
+          "errorRate": 0.00125,
+          "clarity": 0.94
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    },
+    {
+      "id": "brightbank-upfront",
+      "name": "Combined + shipping shown on PDP",
+      "product": {
+        "name": "Brightbank Orange & Vanilla Soda · 12-pack",
+        "category": "food",
+        "description": "Fictional all-natural cane-sugar soda. Orange and vanilla, 12 × 12 fl oz cans, 35 g added sugar per can. A full-sugar treat for people open to buying soda online.",
+        "price": 28.8,
+        "unitCost": 10.8,
+        "shipping": 6.95,
+        "shippingCost": 8.5,
+        "taxRate": 0.07,
+        "deliveryDays": 5,
+        "returnDays": 14,
+        "stock": "available",
+        "freeShippingThreshold": 0,
+        "paymentFeeRate": 0.029,
+        "paymentFeeFixed": 0.3,
+        "discountPct": 0.1,
+        "appeal": "design"
+      },
+      "pageCopy": "BRIGHTBANK Orange & Vanilla Cane Sugar Soda. A 12-pack of 12 fl oz cans (144 fl oz total). All-natural soda with bright orange and a soft vanilla finish. Made without artificial flavors or colors. Ingredients: Carbonated water, cane sugar, orange juice from concentrate, natural orange and vanilla flavors, citric acid. Nutrition: Per 12 fl oz can: 140 calories; 0 g total fat; 15 mg sodium; 36 g carbohydrate; 35 g total sugar, including 35 g added sugar; 0 g protein. Caffeine free. Contains added sugar; this is not a low-sugar or zero-sugar drink. Single purchase, no subscription. Store unopened cans in a cool, dry place. Refrigerate after opening and serve cold. Ships to the contiguous United States in 3-5 business days. Unopened packs may be returned within 14 days; buyer pays return postage. Report damaged deliveries within 7 days for replacement. Contact support through the on-page form. There are no customer reviews yet. $6.95 shipping per pack. Tax calculated at checkout. This is a fictional storefront for a simulator example.",
+      "acquisition": {
+        "platform": "instagram",
+        "headline": "Orange. Vanilla. Cane sugar.",
+        "body": "Orange brightness, a soft vanilla finish, and cane sugar. Brightbank is an all-natural soda made without artificial flavors or colors. Twelve 12 fl oz cans, ready for the fridge. Contains 35 g added sugar per can. Shop the 12-pack.",
+        "cta": "Shop now",
+        "searchQuery": "",
+        "searchIntent": 0.5
+      },
+      "features": {
+        "adClarity": 0.88,
+        "adAttention": 0.82,
+        "adCredibility": 0.72,
+        "adBenefit": 0.7,
+        "adOffer": 0.62,
+        "adQueryMatch": 0.5,
+        "pageMatch": 0.94,
+        "pageClarity": 0.76,
+        "pageInformation": 0.9,
+        "pageAnswerAccess": 0.9,
+        "pageProof": 0.4,
+        "pageTrust": 0.72,
+        "pageUsability": 0.78,
+        "cartClarity": 0.66,
+        "informationAccess": 0.9,
+        "couponProminence": 0.82,
+        "upsellPressure": 0.15
+      },
+      "settings": {
+        "priceInAd": false,
+        "shippingDisclosure": "pdp",
+        "discountMode": "coupon",
+        "couponSuccess": 0.25,
+        "guestCheckout": true,
+        "wallets": true,
+        "paypal": true,
+        "bnpl": false,
+        "mobileOptimized": true,
+        "financingVisibleOnPage": false,
+        "pageLoadSeconds": 2.6,
+        "returnPolicyVisible": true,
+        "adFrequency": 1,
+        "cpm": 9.5
+      },
+      "steps": [
+        {
+          "id": "contact",
+          "name": "Contact details",
+          "type": "contact",
+          "fields": 2,
+          "seconds": 8,
+          "errorRate": 0.003,
+          "clarity": 0.94
+        },
+        {
+          "id": "address",
+          "name": "Delivery address",
+          "type": "address",
+          "fields": 5,
+          "seconds": 12,
+          "errorRate": 0.00875,
+          "clarity": 0.94
+        },
+        {
+          "id": "shipping",
+          "name": "Choose shipping",
+          "type": "shipping",
+          "fields": 1,
+          "seconds": 3,
+          "errorRate": 0.002,
+          "clarity": 0.94
+        },
+        {
+          "id": "payment",
+          "name": "Card payment",
+          "type": "payment",
+          "fields": 4,
+          "seconds": 12,
+          "errorRate": 0.00625,
+          "clarity": 0.94
+        },
+        {
+          "id": "review",
+          "name": "Review order",
+          "type": "review",
+          "fields": 1,
+          "seconds": 3,
+          "errorRate": 0.00125,
+          "clarity": 0.94
+        }
+      ],
+      "sources": [],
+      "analyses": [],
+      "featureBasis": {
+        "adClarity": {
+          "kind": "manual"
+        },
+        "adAttention": {
+          "kind": "manual"
+        },
+        "adCredibility": {
+          "kind": "manual"
+        },
+        "adBenefit": {
+          "kind": "manual"
+        },
+        "adOffer": {
+          "kind": "manual"
+        },
+        "adQueryMatch": {
+          "kind": "manual"
+        },
+        "pageMatch": {
+          "kind": "manual"
+        },
+        "pageClarity": {
+          "kind": "manual"
+        },
+        "pageInformation": {
+          "kind": "manual"
+        },
+        "pageAnswerAccess": {
+          "kind": "manual"
+        },
+        "pageProof": {
+          "kind": "manual"
+        },
+        "pageTrust": {
+          "kind": "manual"
+        },
+        "pageUsability": {
+          "kind": "manual"
+        },
+        "cartClarity": {
+          "kind": "manual"
+        },
+        "informationAccess": {
+          "kind": "manual"
+        },
+        "couponProminence": {
+          "kind": "manual"
+        },
+        "upsellPressure": {
+          "kind": "manual"
+        }
+      }
+    }
+  ],
+  "coefficients": {
+    "ad": -4.1,
+    "page": -1.7,
+    "cart": 1.1,
+    "checkout": 1.6,
+    "provenance": "authored"
+  }
+}

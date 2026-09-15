@@ -20,7 +20,9 @@
     "test:worker": "node scripts/test-worker.mjs",
     "test:api": "node scripts/api-smoke.mjs",
     "benchmark": "node scripts/benchmark.mjs",
-    "format": "prettier --write app/page.tsx app/globals.css components/simulator lib/sim lib/server hooks/use-simulation.ts tests scripts/*.mjs"
+    "format": "prettier --write app/page.tsx app/globals.css components/simulator lib/sim lib/server hooks/use-simulation.ts tests scripts/*.mjs",
+    "example:brightbank": "node scripts/brightbank-study.mjs",
+    "test:brightbank": "node scripts/verify-brightbank.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

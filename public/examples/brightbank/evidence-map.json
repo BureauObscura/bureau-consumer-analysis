@@ -1,0 +1,61 @@
+{
+  "brightbank-baseline": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-baseline-pdp.html",
+    "brightbank-baseline-cart.html",
+    "brightbank-baseline-checkout.html"
+  ],
+  "brightbank-information": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-information-pdp.html",
+    "brightbank-information-cart.html",
+    "brightbank-information-checkout.html",
+    "product-facts.pdf"
+  ],
+  "brightbank-guest": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-guest-pdp.html",
+    "brightbank-guest-cart.html",
+    "brightbank-guest-checkout.html"
+  ],
+  "brightbank-simple": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-simple-pdp.html",
+    "brightbank-simple-cart.html",
+    "brightbank-simple-checkout.html"
+  ],
+  "brightbank-shipping": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-shipping-pdp.html",
+    "brightbank-shipping-cart.html",
+    "brightbank-shipping-checkout.html"
+  ],
+  "brightbank-promo": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-promo-pdp.html",
+    "brightbank-promo-cart.html",
+    "brightbank-promo-checkout.html"
+  ],
+  "brightbank-combined": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-combined-pdp.html",
+    "brightbank-combined-cart.html",
+    "brightbank-combined-checkout.html",
+    "product-facts.pdf"
+  ],
+  "brightbank-upfront": [
+    "assets/instagram-ad.png",
+    "ad-copy.txt",
+    "brightbank-upfront-pdp.html",
+    "brightbank-upfront-cart.html",
+    "brightbank-upfront-checkout.html",
+    "product-facts.pdf"
+  ]
+}

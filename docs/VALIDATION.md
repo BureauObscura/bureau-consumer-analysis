@@ -2,6 +2,12 @@
 
 Implementation validation: 2026-09-12. Engine `consumer-1.0.0`.
 
+## Brightbank end-to-end example, 2026-09-15
+
+The [Brightbank test record](../public/examples/brightbank/browser-test.md) adds a real local browser run of 10,000,000 synthetic consumers across eight journeys, creative upload, source inspection, study/result persistence, portable example imports and simulated storefront checkout completion. Browser results and every paired comparison exactly matched the independent engine output. The package also contains six 10M price points, 57 replayed consumer records, and three 200k sensitivity checks. [Execution receipt](../public/examples/brightbank/test-receipt.json).
+
+Typecheck, lint, 14 engine regressions, local API integration and the production build were rerun for this package. The original validation record below remains dated to the initial implementation; the Brightbank record defines the later browser coverage and its remaining gaps.
+
 ## Executed
 
 - **TypeScript:** `npm run typecheck` passed.
@@ -53,7 +59,7 @@ These are synthetic benchmark outputs from the supplied default assumptions. The
 - Predictive accuracy, population representativeness, or causal validity against real purchases.
 - Live paid GPT analysis with the user's API key.
 - A complete interactive rendering of imported HTML or live checkout pages.
-- Browser visual, accessibility, or end-to-end interaction QA. Browser interaction testing has not been completed.
+- The initial implementation did not receive browser QA. The later Brightbank example covers the desktop workflow listed above; cross-browser, mobile-device and comprehensive accessibility validation remain open.
 - Live WebMCP registration/execution. No supported validation context was available; the two optional browser tools are feature-detected and were not claimed verified.
 
 A successful build and private deployment are distinct from the open validation gaps above.

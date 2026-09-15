@@ -1,0 +1,11 @@
+{
+  "testedAt": "2026-09-15T06:16:06.426Z",
+  "browser": "Google Chrome on macOS",
+  "processed": 10000000,
+  "scenarios": 8,
+  "elapsedMs": 35948.5,
+  "engine": "consumer-1.0.0",
+  "allScenarioResultsMatch": true,
+  "allPairedComparisonsMatch": true,
+  "evidence": "Browser Run 10,000,000 completed; Save run succeeded; stored browser artifact retrieved through local API and compared with published engine output. Later fixture corrections changed source presentation, not numerical inputs or outcomes."
+}

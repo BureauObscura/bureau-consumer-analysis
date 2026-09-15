@@ -4,6 +4,12 @@ A purchase-journey simulator for comparing advertising, product-page, offer, and
 
 The application is an assumption-driven decision tool. Its default population and behavioral coefficients are **not empirically validated consumer research**. A large synthetic population reduces simulation noise; it does not establish real-world demand.
 
+## Complete example: Brightbank soda
+
+The [Brightbank example study](public/examples/brightbank/README.md) includes a finished fictional Instagram ad, product pages, a PDF product sheet, interactive cart/checkout mockups, eight journeys evaluated across 10 million synthetic consumers, six price points, and replayable results. [Read the findings](public/examples/brightbank/RESULTS.md) or open **Model record → Open completed example** in the app.
+
+Run `npm run example:brightbank` to reproduce the calculations. The package includes [manual input rationale](public/examples/brightbank/assumptions.md), [source hashes](public/examples/brightbank/evidence-manifest.json), and a [browser test record](public/examples/brightbank/browser-test.md).
+
 ## What it does
 
 - **Ad inputs:** Instagram, Facebook, TikTok, or Google Search; creative evidence; headline; body copy or transcript; CTA; search query and commercial intent; visible price; prior-exposure context; CPM.

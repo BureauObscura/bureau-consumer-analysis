@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Higher noninterest",
+    "overrides": {
+      "excludedShare": 0.8
+    },
+    "processed": 200000,
+    "results": [
+      {
+        "name": "Baseline: limited PDP + account checkout",
+        "purchases": 49,
+        "contribution": 728.59,
+        "adSpend": 1900
+      },
+      {
+        "name": "Complete PDP + guest + shorter forms",
+        "purchases": 183,
+        "contribution": 2696.52,
+        "adSpend": 1900
+      }
+    ]
+  },
+  {
+    "name": "Lower budgets",
+    "overrides": {
+      "medianBudget": 24
+    },
+    "processed": 200000,
+    "results": [
+      {
+        "name": "Baseline: limited PDP + account checkout",
+        "purchases": 64,
+        "contribution": 956.98,
+        "adSpend": 1900
+      },
+      {
+        "name": "Complete PDP + guest + shorter forms",
+        "purchases": 226,
+        "contribution": 3320.92,
+        "adSpend": 1900
+      }
+    ]
+  },
+  {
+    "name": "Higher price sensitivity",
+    "overrides": {
+      "priceSensitivity": 1.8
+    },
+    "processed": 200000,
+    "results": [
+      {
+        "name": "Baseline: limited PDP + account checkout",
+        "purchases": 82,
+        "contribution": 1216.54,
+        "adSpend": 1900
+      },
+      {
+        "name": "Complete PDP + guest + shorter forms",
+        "purchases": 260,
+        "contribution": 3826.7,
+        "adSpend": 1900
+      }
+    ]
+  }
+]

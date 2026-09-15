@@ -1165,6 +1165,78 @@ export default function Page() {
               <div className="panel">
                 <h3>Reproduce & export</h3>
                 <p>
+                  The Brightbank soda example includes an Instagram creative,
+                  product pages, checkout mockups, and a completed
+                  10-million-consumer study.
+                </p>
+                <div className="actions">
+                  <Button
+                    variant="outline"
+                    onClick={async () => {
+                      try {
+                        const response = await fetch(
+                          "/examples/brightbank/configuration.json",
+                        );
+                        if (!response.ok)
+                          throw Error(
+                            "Example configuration could not be loaded.",
+                          );
+                        importFile(
+                          new File(
+                            [await response.text()],
+                            "brightbank-configuration.json",
+                            { type: "application/json" },
+                          ),
+                        );
+                        setTab("journey");
+                      } catch (e) {
+                        setError(
+                          e instanceof Error
+                            ? e.message
+                            : "Example could not be loaded.",
+                        );
+                      }
+                    }}
+                  >
+                    Load Brightbank inputs
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={async () => {
+                      try {
+                        const response = await fetch(
+                          "/examples/brightbank/journey-run.json",
+                        );
+                        if (!response.ok)
+                          throw Error("Example results could not be loaded.");
+                        importFile(
+                          new File(
+                            [await response.text()],
+                            "brightbank-run.json",
+                            { type: "application/json" },
+                          ),
+                        );
+                      } catch (e) {
+                        setError(
+                          e instanceof Error
+                            ? e.message
+                            : "Example could not be loaded.",
+                        );
+                      }
+                    }}
+                  >
+                    Open completed example
+                  </Button>
+                  <a
+                    className="text-link"
+                    href="/examples/brightbank/index.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Creative, mockups & study files
+                  </a>
+                </div>
+                <p>
                   JSON exports contain frozen scenario inputs, population
                   configuration, seed, consumer ID range, engine version,
                   aggregate outcomes, paired counts, and analysis receipts. Run

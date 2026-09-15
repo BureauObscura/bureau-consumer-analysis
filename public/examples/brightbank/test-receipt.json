@@ -1,0 +1,113 @@
+{
+  "executedAt": "2026-09-15T06:07:11.144Z",
+  "runtime": "v24.15.0",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "engine": "consumer-1.0.0",
+  "configurationSha256": "1462c621041f9e1520b85341749afb916f7822e2187e281a6e7fcd18e5482563",
+  "population": 10000000,
+  "journeys": 8,
+  "pricePoints": 6,
+  "apiTested": true,
+  "paidGptTested": false,
+  "checks": [
+    {
+      "name": "Portable configuration validates; all feature scores are manual",
+      "status": "passed"
+    },
+    {
+      "name": "All 27 source assets uploaded; image and PDF bytes, hashes and private headers round-trip",
+      "status": "passed",
+      "count": 27
+    },
+    {
+      "name": "Study saved and reopened with canonical owned source evidence",
+      "status": "passed"
+    },
+    {
+      "name": "Missing API key rejected before paid GPT request",
+      "status": "passed"
+    },
+    {
+      "name": "Full 10M run validates nested funnels, loss accounting, segments and paired outcomes",
+      "status": "passed",
+      "elapsedMs": 40008.369375
+    },
+    {
+      "name": "Structural noninterest never buys; every journey retains a convertible subset",
+      "status": "passed"
+    },
+    {
+      "name": "Checkout-only interventions preserve every upstream funnel count",
+      "status": "passed"
+    },
+    {
+      "name": "20,000-ID partition replay produces identical results and paired comparisons",
+      "status": "passed"
+    },
+    {
+      "name": "Individual records reproduce sampled outcomes and cent-based unit economics",
+      "status": "passed",
+      "records": 57
+    },
+    {
+      "name": "Full 10M frozen run saved and read back unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Six price points each evaluate 10M IDs with the same price-free ad",
+      "status": "passed",
+      "elapsedMs": 31846.106834000006
+    },
+    {
+      "name": "Three explicit 200,000-ID sensitivity checks completed",
+      "status": "passed"
+    }
+  ],
+  "memoryAtEnd": {
+    "rss": 101203968,
+    "heapTotal": 47726592,
+    "heapUsed": 19316840,
+    "external": 4542651,
+    "arrayBuffers": 623761
+  },
+  "packageVerification": {
+    "verifiedAt": "2026-09-15T06:23:08.673Z",
+    "fullReplay": "Both 10M result files matched every numerical result and paired comparison.",
+    "checks": [
+      {
+        "command": "npm run typecheck",
+        "exitCode": 0
+      },
+      {
+        "command": "npm run lint",
+        "exitCode": 0
+      },
+      {
+        "command": "npm test",
+        "exitCode": 0,
+        "tests": 14
+      },
+      {
+        "command": "node scripts/api-smoke.mjs http://localhost:5174",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/verify-brightbank.mjs --full",
+        "exitCode": 0
+      },
+      {
+        "command": "npm run build (Sites build helper)",
+        "exitCode": 0
+      },
+      {
+        "check": "Static HTML links",
+        "resolved": 63
+      },
+      {
+        "check": "Public-source scan",
+        "privateDataFound": false
+      }
+    ]
+  }
+}

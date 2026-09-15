@@ -1,0 +1,10 @@
+Use case: ads-marketing
+Asset type: finished 4:5 portrait Instagram feed advertisement for fictional soda brand BRIGHTBANK.
+Primary request: Create a stylish, premium but approachable orange and vanilla cane-sugar soda ad with polished studio product photography and sharp editorial typography, suitable as a finished example creative in a public portfolio study.
+Scene/backdrop: Vivid warm tangerine-orange studio background with a cream lower field and subtle tactile print character. A sunlit aluminum can, cold with real condensation, is the hero. One juicy fresh orange wedge and one delicate cream vanilla flower at its base. Keep the staging restrained and appetizing.
+Subject: One tall standard 12 fl oz aluminum soda can, distinctive tangerine and cream printed packaging, readable front-facing label. Label brand is BRIGHTBANK, spelled B R I G H T B A N K. Can label text verbatim: "BRIGHTBANK", "ORANGE & VANILLA", "CANE SUGAR SODA", "12 FL OZ".
+Composition/framing: Exactly 4:5 portrait. Top third carries a bold cream headline in large condensed editorial type, with considered line breaks. Can occupies the middle, angled only slightly so the label stays readable. Keep all type in generous safe margins. Bottom includes the price and a concise clearly separated call to action. Strong hierarchy, fresh modern editorial layout, professional art direction.
+Lighting/mood: Warm directional studio sunlight, soft convincing grounding shadows, bright highlights on aluminum and visible condensation; tactile and refreshing.
+Color palette: Vivid warm tangerine and pale vanilla cream, tiny deep burnt-orange typography accents only where contrast requires.
+Text (verbatim): Main headline "Orange. Vanilla. Cane sugar." Secondary offer "12 cans · $28.80" CTA "Shop the 12-pack".
+Constraints: Preserve every exact spelling, punctuation and number. Only the stated ad text and stated can label text. No health claims, certification badges, reviews, testimonials, invented ratings, fake Instagram UI, watermarks, mock browser chrome, or added slogans. This is a fictional soda scenario, not a claim about an existing company. Render one finished ad image.
