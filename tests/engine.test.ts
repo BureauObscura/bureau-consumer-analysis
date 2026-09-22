@@ -22,7 +22,11 @@ import { parseRun } from "../lib/sim/run-validation";
 import { calibrationSignature } from "../lib/sim/signature";
 import { publicPageUrl } from "../lib/server/url-policy";
 import { htmlText } from "../lib/server/html";
-import type { RunRequest, RunResult } from "../lib/sim/types";
+import {
+  MAX_POPULATION,
+  type RunRequest,
+  type RunResult,
+} from "../lib/sim/types";
 const request = (size = 100000): RunRequest => ({
   id: "unit-test",
   population: { ...DEFAULT_POPULATION, size },
@@ -325,7 +329,7 @@ test("request and saved artifact validation reject invalid or contradictory valu
   assert.throws(() =>
     runRequestSchema.parse({
       ...q,
-      population: { ...q.population, size: 10000001 },
+      population: { ...q.population, size: MAX_POPULATION + 1 },
     }),
   );
   assert.throws(() => runRequestSchema.parse({ ...q, id: "" }));

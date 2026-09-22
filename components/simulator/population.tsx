@@ -1,16 +1,24 @@
 "use client";
 import { useMemo } from "react";
+import { Range, NumberField, Stat, number, dollars, percent } from "./controls";
 import {
-  Range,
-  NumberField,
-  Choice,
-  Stat,
-  number,
-  dollars,
-  percent,
-} from "./controls";
-import type { PopulationConfig, Scenario } from "@/lib/sim/types";
+  MAX_POPULATION,
+  type PopulationConfig,
+  type Scenario,
+} from "@/lib/sim/types";
 import { profileFor } from "@/lib/sim/engine";
+const MIN_POPULATION = 1_000;
+const POPULATION_STEP = 1_000;
+const populationSize = (value: number) =>
+  Number.isFinite(value)
+    ? Math.min(
+        MAX_POPULATION,
+        Math.max(
+          MIN_POPULATION,
+          Math.round(value / POPULATION_STEP) * POPULATION_STEP,
+        ),
+      )
+    : null;
 export function Population({
   population: p,
   onChange,
@@ -22,6 +30,10 @@ export function Population({
 }) {
   const set = (key: keyof PopulationConfig, value: number) =>
     onChange({ ...p, [key]: value });
+  const setPopulationSize = (value: number) => {
+    const size = populationSize(value);
+    if (size !== null) onChange({ ...p, size });
+  };
   const records = useMemo(
     () =>
       [0, 41, 837, 912].map((id) =>
@@ -42,18 +54,28 @@ export function Population({
         <span className="tag">Adult consumer goods · USD</span>
       </div>
       <div className="panel">
-        <div className="form-grid three">
-          <Choice
-            label="Population size"
-            value={String(p.size)}
-            onChange={(v) => set("size", Number(v))}
-            options={[
-              { value: "10000000", label: "10,000,000 consumers" },
-              { value: "1000000", label: "1,000,000 consumers" },
-              { value: "100000", label: "100,000 consumers" },
-              { value: "10000", label: "10,000 consumers" },
-            ]}
+        <div className="form-grid two">
+          <Range
+            label="Consumers to benchmark"
+            value={p.size}
+            onChange={setPopulationSize}
+            min={MIN_POPULATION}
+            max={MAX_POPULATION}
+            step={POPULATION_STEP}
+            format={number}
+            help="Each selected ID is evaluated as a distinct synthetic consumer. Larger runs take longer but reduce simulation noise inside the authored model."
           />
+          <NumberField
+            label="Exact consumer count"
+            value={p.size}
+            onChange={setPopulationSize}
+            min={MIN_POPULATION}
+            max={MAX_POPULATION}
+            step={POPULATION_STEP}
+            help={`Maximum ${number(MAX_POPULATION)} consumers.`}
+          />
+        </div>
+        <div className="form-grid two">
           <NumberField
             label="Population seed"
             value={p.seed}
@@ -207,10 +229,10 @@ export function Population({
       </div>
       <div className="notice">
         Default population shares and behavioral coefficients are authored
-        assumptions. Ten million synthetic records increase simulation
+        assumptions. Larger synthetic populations increase simulation
         resolution; they do not make the population representative of ten
-        million real people. Use historical funnel data and sensitivity tests to
-        challenge the assumptions.
+        million or one hundred million real people. Use historical funnel data
+        and sensitivity tests to challenge the assumptions.
       </div>
     </div>
   );

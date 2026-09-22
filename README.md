@@ -1,6 +1,6 @@
 # Bureau Obscura · Consumer Analysis Division
 
-A purchase-journey simulator for comparing advertising, product-page, offer, and checkout decisions. It evaluates up to **10,000,000 individual synthetic consumers** against as many as eight journeys, using persistent preferences and the same random streams in each comparison.
+A purchase-journey simulator for comparing advertising, product-page, offer, and checkout decisions. It evaluates up to **100,000,000 individual synthetic consumers** against as many as eight journeys, using persistent preferences and the same random streams in each comparison.
 
 The application is an assumption-driven decision tool. Its default population and behavioral coefficients are **not empirically validated consumer research**. A large synthetic population reduces simulation noise; it does not establish real-world demand.
 

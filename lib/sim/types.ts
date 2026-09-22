@@ -1,5 +1,5 @@
 export const ENGINE_VERSION = "consumer-1.0.0";
-export const MAX_POPULATION = 10_000_000;
+export const MAX_POPULATION = 100_000_000;
 export type Stage = "ad" | "pdp" | "cart" | "checkout";
 export type Category =
   | "home"

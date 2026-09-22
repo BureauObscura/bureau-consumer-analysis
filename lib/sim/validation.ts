@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { FEATURE_FIELDS } from "./defaults";
+import { MAX_POPULATION } from "./types";
 const ratio = z.number().min(0).max(1);
 const features = z.object(
   Object.fromEntries(FEATURE_FIELDS.map((f) => [f.key, ratio])) as Record<
@@ -8,7 +9,7 @@ const features = z.object(
   >,
 );
 export const populationSchema = z.object({
-  size: z.number().int().min(1000).max(10_000_000),
+  size: z.number().int().min(1000).max(MAX_POPULATION),
   seed: z.number().int().min(0).max(4294967295),
   excludedShare: ratio,
   activeNeedShare: ratio,
@@ -225,7 +226,7 @@ export const runRequestSchema = z
     scenarios: z.array(scenarioSchema).min(1).max(8),
     coefficients: coefficientsSchema,
     startId: z.number().int().nonnegative().optional(),
-    count: z.number().int().min(1).max(10_000_000).optional(),
+    count: z.number().int().min(1).max(MAX_POPULATION).optional(),
   })
   .superRefine((r, ctx) => {
     if (new Set(r.scenarios.map((s) => s.id)).size !== r.scenarios.length)

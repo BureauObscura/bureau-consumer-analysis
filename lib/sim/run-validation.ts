@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { runRequestSchema } from "./validation";
-import { REASONS, type RunResult } from "./types";
-const n = z.number().int().nonnegative().max(10_000_000),
+import { MAX_POPULATION, REASONS, type RunResult } from "./types";
+const n = z.number().int().nonnegative().max(MAX_POPULATION),
   money = z.number().finite();
 const funnel = z.object({
   exposed: n,
